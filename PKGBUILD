@@ -1,7 +1,7 @@
 # Maintainer: Paul Staab <develop(at)paulstaab(dot)de>
 
 pkgname=scrm
-pkgver=1.0.0
+pkgver=1.2.0
 pkgrel=1
 pkgdesc="A Coalescent Simulator for Genome-Scale Biological Sequences"
 arch=('i686' 'x86_64' 'armv7h')
@@ -10,9 +10,9 @@ license=('GPL3')
 depends=('gcc-libs')
 makedepends=('gcc>=4.6.3')
 checkdepends=('cppunit')
-source=('https://scrm.github.io/releases/scrm-1.0.0.tar.gz')
-md5sums=('2d9868bd8555027959bb30f8255c984a')
-sha512sums=('abbd668b911955ef45b6e258c7fa5c776c72fcb66f622915dde51e313165213c4725dffcd36376567c283290366cdedd910185294585b13e3cca2eefdda63317')
+source=("https://scrm.github.io/releases/scrm-$pkgver.tar.gz")
+md5sums=('b5cdfee773cee422df1a8348bb2b296b')
+sha512sums=('ae4f73858731d22dda70c32f10f60d69ef877f765f0b7ab8df1f686e84137c57140129789b49bb36bb5c2ec3d602f49de70edd5b365b5d6aaf19a4013e464a1e')
 
 build() {
 	cd "$srcdir/$pkgname-$pkgver"
